@@ -1,0 +1,1 @@
+/glade/work/gseijo/tides/tides_all_may16/tz_002.nc

@@ -1,0 +1,161 @@
+"MOM6 diagnostic fields table for CESM case: CARIB_025.002"
+1 1 1 0 0 0
+### Section-1: File List
+#========================
+"CARIB_025.002.mom6.frc%4yr-%2mo",                  1,  "months", 1, "days",   "time", 1, "months"
+"CARIB_025.002.mom6.rho2%4yr-%2mo",                 1,  "months", 1, "days",   "time", 1, "months"
+"CARIB_025.002.mom6.hm%4yr-%2mo",                   1,  "months", 1, "days",   "time", 1, "months"
+"CARIB_025.002.mom6.h%4yr-%2mo",                    1,  "months", 1, "days",   "time", 1, "months"
+"CARIB_025.002.mom6.sfc%4yr-%2mo",                  1,  "days",   1, "days",   "time", 1, "months"
+"CARIB_025.002.mom6.static",                        -1, "days",   1, "days",   "time"
+
+### Section-2: Fields List
+#=========================
+# CARIB_025.002.mom6.frc%4yr-%2mo
+"ocean_model","taux","taux","CARIB_025.002.mom6.frc%4yr-%2mo","all",.true.,"none", 2
+"ocean_model","tauy","tauy","CARIB_025.002.mom6.frc%4yr-%2mo","all",.true.,"none", 2
+"ocean_model","ustar","ustar","CARIB_025.002.mom6.frc%4yr-%2mo","all",.true.,"none", 2
+# mass/vol
+"ocean_model","PRCmE","PRCmE","CARIB_025.002.mom6.frc%4yr-%2mo","all",.true.,"none", 2
+"ocean_model","lprec","lprec","CARIB_025.002.mom6.frc%4yr-%2mo","all",.true.,"none", 2
+"ocean_model","fprec","fprec","CARIB_025.002.mom6.frc%4yr-%2mo","all",.true.,"none", 2
+"ocean_model","evap","evap","CARIB_025.002.mom6.frc%4yr-%2mo","all",.true.,"none", 2
+"ocean_model","vprec","vprec","CARIB_025.002.mom6.frc%4yr-%2mo","all",.true.,"none", 2
+"ocean_model","lrunoff","lrunoff","CARIB_025.002.mom6.frc%4yr-%2mo","all",.true.,"none", 2
+"ocean_model","frunoff","frunoff","CARIB_025.002.mom6.frc%4yr-%2mo","all",.true.,"none", 2
+"ocean_model","seaice_melt","seaice_melt","CARIB_025.002.mom6.frc%4yr-%2mo","all",.true.,"none", 2
+# heat
+"ocean_model","net_heat_coupler","net_heat_coupler","CARIB_025.002.mom6.frc%4yr-%2mo","all",.true.,"none", 2
+"ocean_model","net_heat_surface","net_heat_surface","CARIB_025.002.mom6.frc%4yr-%2mo","all",.true.,"none", 2
+"ocean_model","frazil","frazil","CARIB_025.002.mom6.frc%4yr-%2mo","all",.true.,"none", 2
+"ocean_model","sensible","sensible","CARIB_025.002.mom6.frc%4yr-%2mo","all",.true.,"none", 2
+"ocean_model","latent","latent","CARIB_025.002.mom6.frc%4yr-%2mo","all",.true.,"none", 2
+"ocean_model","LwLatSens","LwLatSens","CARIB_025.002.mom6.frc%4yr-%2mo","all",.true.,"none", 2
+"ocean_model","SW","SW","CARIB_025.002.mom6.frc%4yr-%2mo","all",.true.,"none", 2
+"ocean_model","LW","LW","CARIB_025.002.mom6.frc%4yr-%2mo","all",.true.,"none", 2
+"ocean_model","Heat_PmE","Heat_PmE","CARIB_025.002.mom6.frc%4yr-%2mo","all",.true.,"none", 2
+"ocean_model","seaice_melt_heat","seaice_melt_heat","CARIB_025.002.mom6.frc%4yr-%2mo","all",.true.,"none", 2
+"ocean_model","heat_content_lrunoff","heat_content_lrunoff","CARIB_025.002.mom6.frc%4yr-%2mo","all",.true.,"none", 2
+"ocean_model","heat_content_frunoff","heat_content_frunoff","CARIB_025.002.mom6.frc%4yr-%2mo","all",.true.,"none", 2
+"ocean_model","heat_content_icemelt","heat_content_icemelt","CARIB_025.002.mom6.frc%4yr-%2mo","all",.true.,"none", 2
+"ocean_model","heat_content_lprec","heat_content_lprec","CARIB_025.002.mom6.frc%4yr-%2mo","all",.true.,"none", 2
+"ocean_model","heat_content_fprec","heat_content_fprec","CARIB_025.002.mom6.frc%4yr-%2mo","all",.true.,"none", 2
+"ocean_model","heat_content_vprec","heat_content_vprec","CARIB_025.002.mom6.frc%4yr-%2mo","all",.true.,"none", 2
+"ocean_model","heat_content_cond","heat_content_cond","CARIB_025.002.mom6.frc%4yr-%2mo","all",.true.,"none", 2
+"ocean_model","heat_content_evap","heat_content_evap","CARIB_025.002.mom6.frc%4yr-%2mo","all",.true.,"none", 2
+"ocean_model","heat_content_massout","heat_content_massout","CARIB_025.002.mom6.frc%4yr-%2mo","all",.true.,"none", 2
+"ocean_model","heat_content_massin","heat_content_massin","CARIB_025.002.mom6.frc%4yr-%2mo","all",.true.,"none", 2
+"ocean_model","heat_content_surfwater","heat_content_surfwater","CARIB_025.002.mom6.frc%4yr-%2mo","all",.true.,"none", 2
+"ocean_model","internal_heat","internal_heat","CARIB_025.002.mom6.frc%4yr-%2mo","all",.true.,"none", 2
+"ocean_model","heat_added","heat_added","CARIB_025.002.mom6.frc%4yr-%2mo","all",.true.,"none", 2
+"ocean_model","latent_evap","latent_evap","CARIB_025.002.mom6.frc%4yr-%2mo","all",.true.,"none", 2
+"ocean_model","latent_fprec_diag","latent_fprec_diag","CARIB_025.002.mom6.frc%4yr-%2mo","all",.true.,"none", 2
+"ocean_model","latent_frunoff","latent_frunoff","CARIB_025.002.mom6.frc%4yr-%2mo","all",.true.,"none", 2
+# others
+"ocean_model","temp_int","temp_int","CARIB_025.002.mom6.frc%4yr-%2mo","all",.true.,"none", 2
+"ocean_model","salt_int","salt_int","CARIB_025.002.mom6.frc%4yr-%2mo","all",.true.,"none", 2
+"ocean_model","hfds","hfds","CARIB_025.002.mom6.frc%4yr-%2mo","all",.true.,"none", 2
+"ocean_model","p_surf","p_surf","CARIB_025.002.mom6.frc%4yr-%2mo","all",.true.,"none", 2
+"ocean_model","salt_flux","salt_flux","CARIB_025.002.mom6.frc%4yr-%2mo","all",.true.,"none", 2
+"ocean_model","salt_flux_in","salt_flux_in","CARIB_025.002.mom6.frc%4yr-%2mo","all",.true.,"none", 2
+"ocean_model","vprec_global_adjustment","vprec_global_adjustment","CARIB_025.002.mom6.frc%4yr-%2mo","all",.true.,"none", 2
+"ocean_model","net_fresh_water_global_adjustment","net_fresh_water_global_adjustment","CARIB_025.002.mom6.frc%4yr-%2mo","all",.true.,"none", 2
+"ocean_model","salt_flux_global_restoring_adjustment","salt_flux_global_restoring_adjustment","CARIB_025.002.mom6.frc%4yr-%2mo","all",.true.,"none", 2
+"ocean_model","net_massout","net_massout","CARIB_025.002.mom6.frc%4yr-%2mo","all",.true.,"none", 2
+"ocean_model","net_massin","net_massin","CARIB_025.002.mom6.frc%4yr-%2mo","all",.true.,"none", 2
+
+# "CARIB_025.002.mom6.rho2%4yr-%2mo"
+"ocean_model_rho2", "volcello","volcello","CARIB_025.002.mom6.rho2%4yr-%2mo", "all", "mean", "none", 2
+"ocean_model_rho2", "vmo",     "vmo",     "CARIB_025.002.mom6.rho2%4yr-%2mo", "all", "mean", "none", 2
+"ocean_model_rho2", "vhml",    "vhml",    "CARIB_025.002.mom6.rho2%4yr-%2mo", "all", "mean", "none", 2
+"ocean_model_rho2", "umo",     "umo",     "CARIB_025.002.mom6.rho2%4yr-%2mo", "all", "mean", "none", 2
+"ocean_model_rho2", "uhml",    "uhml",    "CARIB_025.002.mom6.rho2%4yr-%2mo", "all", "mean", "none", 2
+"ocean_model_rho2", "thetao",  "thetao",  "CARIB_025.002.mom6.rho2%4yr-%2mo", "all", "mean", "none", 2
+"ocean_model_rho2", "so",      "so",      "CARIB_025.002.mom6.rho2%4yr-%2mo", "all", "mean", "none", 2
+"ocean_model_rho2", "agessc",  "agessc",  "CARIB_025.002.mom6.rho2%4yr-%2mo", "all", "mean", "none", 2
+
+# "CARIB_025.002.mom6.hm%4yr-%2mo"
+"ocean_model", "uo",           "uo",           "CARIB_025.002.mom6.hm%4yr-%2mo", "all", "mean", "none", 2
+"ocean_model", "vo",           "vo",           "CARIB_025.002.mom6.hm%4yr-%2mo", "all", "mean", "none", 2
+"ocean_model", "h",            "h",            "CARIB_025.002.mom6.hm%4yr-%2mo", "all", "mean", "none", 2
+"ocean_model", "e",            "e",            "CARIB_025.002.mom6.hm%4yr-%2mo", "all", "mean", "none", 2
+"ocean_model", "thetao",       "thetao",       "CARIB_025.002.mom6.hm%4yr-%2mo", "all", "mean", "none", 2
+"ocean_model", "so",           "so",           "CARIB_025.002.mom6.hm%4yr-%2mo", "all", "mean", "none", 2
+"ocean_model", "rhoinsitu",    "rhoinsitu",    "CARIB_025.002.mom6.hm%4yr-%2mo", "all", "mean", "none", 2
+"ocean_model", "KE",           "KE",           "CARIB_025.002.mom6.hm%4yr-%2mo", "all", "mean", "none", 2
+"ocean_model", "rhopot0",      "rhopot0",      "CARIB_025.002.mom6.hm%4yr-%2mo", "all", "mean", "none", 2
+"ocean_model", "soga",         "soga",         "CARIB_025.002.mom6.hm%4yr-%2mo", "all", "mean", "none", 2
+"ocean_model", "thetaoga",     "thetaoga",     "CARIB_025.002.mom6.hm%4yr-%2mo", "all", "mean", "none", 2
+"ocean_model", "uh",           "uh",           "CARIB_025.002.mom6.hm%4yr-%2mo", "all", "mean", "none", 2
+"ocean_model", "vh",           "vh",           "CARIB_025.002.mom6.hm%4yr-%2mo", "all", "mean", "none", 2
+"ocean_model", "vhbt",         "vhbt",         "CARIB_025.002.mom6.hm%4yr-%2mo", "all", "mean", "none", 2
+"ocean_model", "uhbt",         "uhbt",         "CARIB_025.002.mom6.hm%4yr-%2mo", "all", "mean", "none", 2
+"ocean_model", "KPP_OBLdepth", "oml",          "CARIB_025.002.mom6.hm%4yr-%2mo", "all", "mean", "none", 2
+"ocean_model", "SSH",          "SSH",          "CARIB_025.002.mom6.hm%4yr-%2mo", "all", "mean", "none", 2
+"ocean_model", "tos",          "tos",          "CARIB_025.002.mom6.hm%4yr-%2mo", "all", "mean", "none", 2
+"ocean_model", "sos",          "sos",          "CARIB_025.002.mom6.hm%4yr-%2mo", "all", "mean", "none", 2
+"ocean_model", "SSU",          "SSU",          "CARIB_025.002.mom6.hm%4yr-%2mo", "all", "mean", "none", 2
+"ocean_model", "SSV",          "SSV",          "CARIB_025.002.mom6.hm%4yr-%2mo", "all", "mean", "none", 2
+"ocean_model", "mass_wt",      "mass_wt",      "CARIB_025.002.mom6.hm%4yr-%2mo", "all", "mean", "none", 2
+"ocean_model", "opottempmint", "opottempmint", "CARIB_025.002.mom6.hm%4yr-%2mo", "all", "mean", "none", 2
+"ocean_model", "somint",       "somint",       "CARIB_025.002.mom6.hm%4yr-%2mo", "all", "mean", "none", 2
+"ocean_model", "Rd_dx",        "Rd_dx",        "CARIB_025.002.mom6.hm%4yr-%2mo", "all", "mean", "none", 2
+"ocean_model", "speed",        "speed",        "CARIB_025.002.mom6.hm%4yr-%2mo", "all", "mean", "none", 2
+"ocean_model", "mlotst",       "mlotst",       "CARIB_025.002.mom6.hm%4yr-%2mo", "all", "mean", "none", 2
+"ocean_model", "difmxybo",     "difmxybo",     "CARIB_025.002.mom6.hm%4yr-%2mo", "all", "mean", "none", 2
+"ocean_model", "difmxylo",     "difmxylo",     "CARIB_025.002.mom6.hm%4yr-%2mo", "all", "mean", "none", 2
+"ocean_model", "volcello",     "volcello",     "CARIB_025.002.mom6.hm%4yr-%2mo", "all", "mean", "none", 2
+"ocean_model", "vmo",          "vmo",          "CARIB_025.002.mom6.hm%4yr-%2mo", "all", "mean", "none", 2
+"ocean_model", "vhml",         "vhml",         "CARIB_025.002.mom6.hm%4yr-%2mo", "all", "mean", "none", 2
+"ocean_model", "umo",          "umo",          "CARIB_025.002.mom6.hm%4yr-%2mo", "all", "mean", "none", 2
+"ocean_model", "uhml",         "uhml",         "CARIB_025.002.mom6.hm%4yr-%2mo", "all", "mean", "none", 2
+"ocean_model", "agessc",       "agessc",       "CARIB_025.002.mom6.hm%4yr-%2mo", "all", "mean", "none", 2
+"ocean_model", "T_ady_2d",     "T_ady_2d",     "CARIB_025.002.mom6.hm%4yr-%2mo", "all", "mean", "none", 2
+"ocean_model", "T_adx_2d",     "T_adx_2d",     "CARIB_025.002.mom6.hm%4yr-%2mo", "all", "mean", "none", 2
+
+# "CARIB_025.002.mom6.h%4yr-%2mo"
+"ocean_model_z", "uo",       "uo",       "CARIB_025.002.mom6.h%4yr-%2mo", "all", "mean", "none", 2
+"ocean_model_z", "vo",       "vo",       "CARIB_025.002.mom6.h%4yr-%2mo", "all", "mean", "none", 2
+"ocean_model_z", "h",        "h",        "CARIB_025.002.mom6.h%4yr-%2mo", "all", "mean", "none", 2
+"ocean_model_z", "e",        "e",        "CARIB_025.002.mom6.h%4yr-%2mo", "all", "mean", "none", 2
+"ocean_model_z", "thetao",   "thetao",   "CARIB_025.002.mom6.h%4yr-%2mo", "all", "mean", "none", 2
+"ocean_model_z", "so",       "so",       "CARIB_025.002.mom6.h%4yr-%2mo", "all", "mean", "none", 2
+"ocean_model_z", "rhoinsitu","rhoinsitu","CARIB_025.002.mom6.h%4yr-%2mo", "all", "mean", "none", 2
+"ocean_model_z", "KE",       "KE",       "CARIB_025.002.mom6.h%4yr-%2mo", "all", "mean", "none", 2
+"ocean_model_z", "rhopot0",  "rhopot0",  "CARIB_025.002.mom6.h%4yr-%2mo", "all", "mean", "none", 2
+"ocean_model_z", "vmo",          "vmo",    "CARIB_025.002.mom6.h%4yr-%2mo", "all", "mean", "none", 2
+"ocean_model_z", "vhml",         "vhml",   "CARIB_025.002.mom6.h%4yr-%2mo", "all", "mean", "none", 2
+"ocean_model_z", "umo",          "umo",    "CARIB_025.002.mom6.h%4yr-%2mo", "all", "mean", "none", 2
+"ocean_model_z", "uhml",         "uhml",   "CARIB_025.002.mom6.h%4yr-%2mo", "all", "mean", "none", 2
+"ocean_model_z", "agessc",       "agessc", "CARIB_025.002.mom6.h%4yr-%2mo", "all", "mean", "none", 2
+
+# "CARIB_025.002.mom6.sfc%4yr-%2mo"
+"ocean_model", "SSH",          "SSH",          "CARIB_025.002.mom6.sfc%4yr-%2mo", "all", "mean", "none", 2
+"ocean_model", "tos",          "tos",          "CARIB_025.002.mom6.sfc%4yr-%2mo", "all", "mean", "none", 2
+"ocean_model", "sos",          "sos",          "CARIB_025.002.mom6.sfc%4yr-%2mo", "all", "mean", "none", 2
+"ocean_model", "SSU",          "SSU",          "CARIB_025.002.mom6.sfc%4yr-%2mo", "all", "mean", "none", 2
+"ocean_model", "SSV",          "SSV",          "CARIB_025.002.mom6.sfc%4yr-%2mo", "all", "mean", "none", 2
+"ocean_model", "mass_wt",      "mass_wt",      "CARIB_025.002.mom6.sfc%4yr-%2mo", "all", "mean", "none", 2
+"ocean_model", "opottempmint", "opottempmint", "CARIB_025.002.mom6.sfc%4yr-%2mo", "all", "mean", "none", 2
+"ocean_model", "somint",       "somint",       "CARIB_025.002.mom6.sfc%4yr-%2mo", "all", "mean", "none", 2
+"ocean_model", "Rd_dx",        "Rd_dx",        "CARIB_025.002.mom6.sfc%4yr-%2mo", "all", "mean", "none", 2
+"ocean_model", "speed",        "speed",        "CARIB_025.002.mom6.sfc%4yr-%2mo", "all", "mean", "none", 2
+"ocean_model", "mlotst",       "mlotst",       "CARIB_025.002.mom6.sfc%4yr-%2mo", "all", "mean", "none", 2
+"ocean_model", "KPP_OBLdepth", "oml",          "CARIB_025.002.mom6.sfc%4yr-%2mo", "all", "mean", "none", 2
+
+# "CARIB_025.002.mom6.static"
+"ocean_model", "geolon",     "geolon",     "CARIB_025.002.mom6.static", "all", ".false.", "none", 2
+"ocean_model", "geolat",     "geolat",     "CARIB_025.002.mom6.static", "all", ".false.", "none", 2
+"ocean_model", "geolon_c",   "geolon_c",   "CARIB_025.002.mom6.static", "all", ".false.", "none", 2
+"ocean_model", "geolat_c",   "geolat_c",   "CARIB_025.002.mom6.static", "all", ".false.", "none", 2
+"ocean_model", "geolon_u",   "geolon_u",   "CARIB_025.002.mom6.static", "all", ".false.", "none", 2
+"ocean_model", "geolat_u",   "geolat_u",   "CARIB_025.002.mom6.static", "all", ".false.", "none", 2
+"ocean_model", "geolon_v",   "geolon_v",   "CARIB_025.002.mom6.static", "all", ".false.", "none", 2
+"ocean_model", "geolat_v",   "geolat_v",   "CARIB_025.002.mom6.static", "all", ".false.", "none", 2
+"ocean_model", "area_t",     "area_t",     "CARIB_025.002.mom6.static", "all", ".false.", "none", 2
+"ocean_model", "depth_ocean","depth_ocean","CARIB_025.002.mom6.static", "all", ".false.", "none", 2
+"ocean_model", "wet",        "wet",        "CARIB_025.002.mom6.static", "all", ".false.", "none", 2
+"ocean_model", "wet_c",      "wet_c",      "CARIB_025.002.mom6.static", "all", ".false.", "none", 2
+"ocean_model", "wet_u",      "wet_u",      "CARIB_025.002.mom6.static", "all", ".false.", "none", 2
+"ocean_model", "wet_v",      "wet_v",      "CARIB_025.002.mom6.static", "all", ".false.", "none", 2
+"ocean_model", "Coriolis",   "Coriolis",   "CARIB_025.002.mom6.static", "all", ".false.", "none", 2
