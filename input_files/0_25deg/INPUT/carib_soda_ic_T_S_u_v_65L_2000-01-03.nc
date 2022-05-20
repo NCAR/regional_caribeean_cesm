@@ -1,0 +1,1 @@
+/glade/work/gmarques/Projects/Carib_025/INPUT/carib_soda_ic_T_S_u_v_65L_2000-01-03.nc

@@ -1,0 +1,1 @@
+/glade/work/gseijo/CHLA_files/SeaWIFS_MOM6/ncfiles/seawifs-clim-1997-2010-tx0.66v1.nc

@@ -1,0 +1,1 @@
+/glade/u/home/gseijo/workdir/soda_obc_out/temp_002.nc
