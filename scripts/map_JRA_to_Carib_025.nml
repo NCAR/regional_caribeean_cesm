@@ -1,0 +1,14 @@
+&input_nml
+   gridtype     = 'obs'
+   file_roff    = '/glade/work/gmarques/Projects/regional_caribeean_cesm/scripts/domain.roff.JRA025m_carib.220520.nc'
+   file_ocn     = '/glade/work/gmarques/Projects/Carib_025/INPUT/CARIB_025_grid_SCRIP.nc'
+   file_nn      = 'map_JRA025m_to_carib_025_nn.220317.nc'
+   file_smooth  = 'map_JRA025m_to_carib_025_sm_e333r100_220317.nc'
+   file_new     = 'map_JRA025m_to_carib_025_nnsm_e333r100_220317.nc'
+   title        = 'runoff map: JRA025m -> carib 025, nearest neighbor and smoothed'
+   eFold        = 1000000.0
+   rMax         = 300000.0
+   step1 = .true.
+   step2 = .true.
+   step3 = .true.
+/
