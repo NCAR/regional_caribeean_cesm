@@ -280,7 +280,7 @@ TS_CONFIG = "file"              !
                                 !     rossby_front - a mixed layer front in thermal wind balance.
                                 !     SCM_CVMix_tests - used in the SCM CVMix tests.
                                 !     USER - call a user modified routine.
-TS_FILE = "carib_soda_ic_T_S_u_v_65L_2000-01-03.nc" !
+TS_FILE = "glorys_IC_65L_2000.nc" !
                                 ! The initial condition file for temperature.
 TEMP_IC_VAR = "temp"            ! default = "PTEMP"
                                 ! The initial condition variable for potential temperature.
@@ -297,7 +297,7 @@ VELOCITY_CONFIG = "file"        ! default = "zero"
                                 !     rossby_front - a mixed layer front in thermal wind balance.
                                 !     soliton - Equatorial Rossby soliton.
                                 !     USER - call a user modified routine.
-VELOCITY_FILE = "carib_soda_ic_T_S_u_v_65L_2000-01-03.nc" !
+VELOCITY_FILE = "glorys_IC_65L_2000.nc" !
                                 ! The name of the velocity initial condition file.
 OBC_SEGMENT_001_DATA = "U=file:uv_001.nc(u),V=file:uv_001.nc(v),SSH=file:zeta_001.nc(zeta),TEMP=file:temp_001.nc(temp),SALT=file:salt_001.nc(salt),Uamp=file:tu_001.nc(uamp),Uphase=file:tu_001.nc(uphase),Vamp=file:tu_001.nc(vamp),Vphase=file:tu_001.nc(vphase),SSHamp=file:tz_001.nc(zamp),SSHphase=file:tz_001.nc(zphase)" !
                                 ! OBC segment docs
@@ -668,5 +668,13 @@ CD_TIDES = 0.0018               !   [nondim] default = 1.0E-04
                                 ! The drag coefficient that applies to the tides.
 GUST_CONST = 0.02               !   [Pa] default = 0.0
                                 ! The background gustiness in the winds.
+! === salt restoration ===
+RESTORE_SALINITY = True
+SALT_RESTORE_FILE = 'regridded_state_restoration_Carib025.nc'
+FLUXCONST = 0.1667
+SRESTORE_AS_SFLUX = True
+MAX_DELTA_SRESTORE = 5.0
+ADJUST_NET_FRESH_WATER_TO_ZERO = False
+ADJUST_NET_SRESTORE_TO_ZERO = False
 
 ! === module MOM_restart ===
