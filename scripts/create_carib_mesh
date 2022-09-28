@@ -1,5 +1,5 @@
 #!/bin/bash
-#PBS -A P9330012
+#PBS -A P93300012
 #PBS -N job_name
 #PBS -j oe
 #PBS -q regular

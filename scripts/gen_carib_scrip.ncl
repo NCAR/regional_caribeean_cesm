@@ -21,6 +21,8 @@ begin
     mom6_grd_file = addfile(ncGrdFilePath,"r")
     tlon     = mom6_grd_file->tlon(:,:)
     tlat     = mom6_grd_file->tlat(:,:)
+    qlon     = mom6_grd_file->qlon(:,:)
+    qlat     = mom6_grd_file->qlat(:,:)
 
     Opt                = True
     Opt@ForceOverwrite = True
@@ -37,33 +39,35 @@ begin
     nx = grid_dimsizes(3)
     n = nx*ny
 
-    Opt@GridCornerLat = new(4*n,double)
-    Opt@GridCornerLon = new(4*n,double)
+    GridCornerLat = new( (/ny, nx, 4/), "double")
+    GridCornerLon = new( (/ny, nx, 4/), "double")
 
+    ;----- create verticie data -----
     do j=0,ny-1
-      do i=0,nx-1
-        bi = (j*nx+i)*4 ; index of 1st corner in cell
+        GridCornerLat(j,:,0) = mom6_grd_file->qlat(j,0)
+        GridCornerLat(j,:,1) = mom6_grd_file->qlat(j,0)
+        GridCornerLat(j,:,2) = mom6_grd_file->qlat(j+1,0)
+        GridCornerLat(j,:,3) = mom6_grd_file->qlat(j+1,0)
+    end do
 
-        Opt@GridCornerLat(bi)   = mom6_grd_file->qlat(j,i)
-        Opt@GridCornerLat(bi+1) = mom6_grd_file->qlat(j,i+1)
-        Opt@GridCornerLat(bi+2) = mom6_grd_file->qlat(j+1,i)
-        Opt@GridCornerLat(bi+3) = mom6_grd_file->qlat(j+1,i+1)
-        Opt@GridCornerLon(bi)   = mom6_grd_file->qlon(j,i)
-        Opt@GridCornerLon(bi+1) = mom6_grd_file->qlon(j,i+1)
-        Opt@GridCornerLon(bi+2) = mom6_grd_file->qlon(j+1,i)
-        Opt@GridCornerLon(bi+3) = mom6_grd_file->qlon(j+1,i+1)
-      end do
+    do i=0,nx-1
+        GridCornerLon(:,i,0)   = mom6_grd_file->qlon(0,i)
+        GridCornerLon(:,i,1) = mom6_grd_file->qlon(0,i+1)
+        GridCornerLon(:,i,2) = mom6_grd_file->qlon(0,i+1)
+        GridCornerLon(:,i,3) = mom6_grd_file->qlon(0,i)
     end do
 
     ; Mask --------------------------------------------------
 
     maskt = mom6_grd_file->tmask(:,:)
     Opt@GridMask = toint(maskt)
+    Opt@GridCornerLat = GridCornerLat
+    Opt@GridCornerLon = GridCornerLon
 
     ; Generate the script file ------------------------------
 
-    curvilinear_to_SCRIP(dstGridPath,tlat,tlon,Opt)
-    ;rectilinear_to_SCRIP(dstGridPath,tlat,tlon,Opt)
+    ;curvilinear_to_SCRIP(dstGridPath,tlat,tlon,Opt)
+    rectilinear_to_SCRIP(dstGridPath,tlat(:,0),tlon(0,:),Opt)
 
 ;---Clean up
     delete(Opt)
