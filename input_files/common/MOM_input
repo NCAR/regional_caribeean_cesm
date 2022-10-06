@@ -305,7 +305,51 @@ OBC_SEGMENT_002_DATA = "U=file:uv_002.nc(u),V=file:uv_002.nc(v),SSH=file:zeta_00
                                 ! OBC segment docs
 
 ! === module MOM_diag_mediator ===
-
+NUM_DIAG_COORDS = 2             ! default = 1
+                                ! The number of diagnostic vertical coordinates to use. For each coordinate, an
+                                ! entry in DIAG_COORDS must be provided.
+USE_GRID_SPACE_DIAGNOSTIC_AXES = False !   [Boolean] default = False
+                                ! If true, use a grid index coordinate convention for diagnostic axes.
+DIAG_COORDS = "z Z ZSTAR", "z1 Z1 ZSTAR" !
+                                ! A list of string tuples associating diag_table modules to a coordinate
+                                ! definition used for diagnostics. Each string is of the form
+                                ! "MODULE_SUFFIX,PARAMETER_SUFFIX,COORDINATE_NAME".
+DIAG_MISVAL = 1.0E+20           !   [not defined] default = 1.0E+20
+                                ! Set the default missing value to use for diagnostics.
+DIAG_AS_CHKSUM = False          !   [Boolean] default = False
+                                ! Instead of writing diagnostics to the diag manager, write a text file
+                                ! containing the checksum (bitcount) of the array.
+AVAILABLE_DIAGS_FILE = "available_diags.000000" ! default = "available_diags.000000"
+                                ! A file into which to write a list of all available ocean diagnostics that can
+                                ! be included in a diag_table.
+DIAG_COORD_DEF_Z = "WOA09"      ! default = "WOA09"
+                                ! Determines how to specify the coordinate resolution. Valid options are:
+                                !  PARAM       - use the vector-parameter DIAG_COORD_RES_Z
+                                !  UNIFORM[:N] - uniformly distributed
+                                !  FILE:string - read from a file. The string specifies
+                                !                the filename and variable name, separated
+                                !                by a comma or space, e.g. FILE:lev.nc,dz
+                                !                or FILE:lev.nc,interfaces=zw
+                                !  WOA09[:N]   - the WOA09 vertical grid (approximately)
+                                !  FNC1:string - FNC1:dz_min,H_total,power,precision
+                                !  HYBRID:string - read from a file. The string specifies
+                                !                the filename and two variable names, separated
+                                !                by a comma or space, for sigma-2 and dz. e.g.
+                                !                HYBRID:vgrid.nc,sigma2,dz
+DIAG_COORD_DEF_Z1 = "FILE:vgrid_glorys.nc,dz" ! default = "WOA09"
+                                ! Determines how to specify the coordinate resolution. Valid options are:
+                                !  PARAM       - use the vector-parameter DIAG_COORD_RES_Z1
+                                !  UNIFORM[:N] - uniformly distributed
+                                !  FILE:string - read from a file. The string specifies
+                                !                the filename and variable name, separated
+                                !                by a comma or space, e.g. FILE:lev.nc,dz
+                                !                or FILE:lev.nc,interfaces=zw
+                                !  WOA09[:N]   - the WOA09 vertical grid (approximately)
+                                !  FNC1:string - FNC1:dz_min,H_total,power,precision
+                                !  HYBRID:string - read from a file. The string specifies
+                                !                the filename and two variable names, separated
+                                !                by a comma or space, for sigma-2 and dz. e.g.
+                                !                HYBRID:vgrid.nc,sigma2,dz
 ! === module MOM_lateral_mixing_coeffs ===
 USE_VARIABLE_MIXING = True      !   [Boolean] default = False
                                 ! If true, the variable mixing code will be called.  This allows diagnostics to
